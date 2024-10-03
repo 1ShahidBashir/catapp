@@ -1,0 +1,77 @@
+<html>
+  <body>
+    <main>
+      <h1>CatPhotoApp</h1>
+      <section> <!--Just for seo-->
+        <h2>Cat Photos</h2>
+        <p>See more <a target="_blank" href="https://freecatphotoapp.com">cat photos</a> in our gallery.</p>
+        <a href="https://freecatphotoapp.com"><img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="A cute orange cat lying on its back."></a>
+      </section>
+
+      <section>
+        <h2>Cat Lists</h2>
+        <h3>Things cats love:</h3>
+
+        <ul> <!--Unordered list-->
+          <li>cat nip</li>  <!--list item-->
+          <li>laser pointers</li>
+          <li>lasagna</li>
+        </ul>
+
+        <figure> <!--used for images and captions-->
+          <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/lasagna.jpg" alt="A slice of lasagna on a plate.">
+          <figcaption>Cats <em>love</em> lasagna.</figcaption>  <!--image caption-->
+                            <!--em means emphasis-->
+        </figure>
+
+        <h3>Top 3 things cats hate:</h3>
+        <ol> <!--ordered list-->
+          <li>flea treatment</li>
+          <li>thunder</li>
+          <li>other cats</li>
+        </ol>
+        <figure>
+            <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/cats.jpg" alt="Five cats looking around a field.">
+            <figcaption>Cats <strong>hate</strong> other cats.</figcaption>
+                               <!--strong or important-->
+        </figure>
+      </section>
+      <section>
+        <h2>Cat Form</h2>
+
+        <form action="https://freecatphotoapp.com/submit-cat-photo"> <!--form -->
+                <!--action value tells browser where to submit the form-->
+            <fieldset>
+                <legend>Is your cat an indoor or outdoor cat?</legend> <!--acts as caption for fieldset-->
+                <label><input type="radio" id="indoor" name="indoor-outdoor" value="indoor">Indoor</label>
+                <label><input type="radio" id="outdoor" name="indoor-outdoor" value="outdoor">Outdoor</label>
+                    <!--label elements associate the text for an input element with the 
+                    input element itself (especially for assistive technologies like screen readers)-->
+                    <!--radio buttons for mcq single correct-->
+                    <!--id helps to uniquely identify elements-->
+                    <!--same name means options of same question otherwise both both buttons can be slected-->
+                    <!--value is sent to server as response-->
+                    <!--fieldset groups related input fields (it causes that outer border too) (block level [newline])-->
+            </fieldset>
+            <fieldset>
+                <legend>What's your cat's personality?</legend>
+                <input type="checkbox" id="loving">
+                <!--checkbox for mcq with multiple ans-->
+                <label for="loving"> Loving</label>
+                <!--using for we can put text for a specific id-->
+            </fieldset>
+            <input type="text" name="catphotourl" placeholder="cat photo URL" required>   
+                <!--input tag is void tag (self closing)-->
+                <!--type can be password, number, email, radio, checkbox, file, button-->
+                <!--name attribute is needed to access form data after submission-->
+                <!--required attribute doesn't need value it means form element is required-->
+            <button type="submit">Submit</button>   
+                <!--button creates a clickable button-->
+                <!--button and input are inline elements ie they do not take newlines-->
+                <!--type takes other values as well-->
+        </form>
+      </section>
+    </main>
+
+  </body>
+</html>
